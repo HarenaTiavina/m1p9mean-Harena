@@ -1,0 +1,31 @@
+pages 
+	- client :
+		- acceuil (pas de besoin de login )
+			- liste des restaurants avec les détails (type cuisine restaurant, fourchette de prix , logo , nom , état)
+		- details restaurant (pas besoin de login)
+			- liste des plats 
+			- prix 
+			- bouton ajouter panier (loger)
+		- panier (loger)
+			- liste commande 
+			- modification commande 
+			- confirmation commande 
+		- livraison 
+			- ajout date et lieux de livraison 
+			- confirmation de livraison avec date et heure 
+	- restaurant (loger): 
+		- liste menu 
+		- crud plat (nom , prix de vente, disponnibilité , prix d'achat)
+		- simulation de bénéfice 
+		- dashboard (plat le plus vendue , plat le moins vendue , client le plus régulier , client le moins régulier)
+		- liste de commande (confirmation de commande , préparation , livraison )
+		- liste de livraison (état de livraison ==> date et heure de départ , destination , date et heure d'arriver )
+		
+	- livreur (loger) : 
+		- liste de commande (trier par date , nom restaurant , nom plat , destination)
+	- admin (loger)
+		- dashboard (courbe chiffre d'affaire par restaurant )
+		- crud restaurant (avec details ==> type de cuisine , fourchette de prix )
+	
+		
+		
