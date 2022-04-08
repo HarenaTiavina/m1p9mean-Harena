@@ -5,9 +5,13 @@ import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AcceuilComponent } from './acceuil/acceuil.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   {path: 'header' , component: HeaderComponent},
+  {path: 'acceuil' , component: AcceuilComponent},
+  {path: 'footer' , component: FooterComponent},
   {path: 'login' , component: LoginComponent}
 ];
 

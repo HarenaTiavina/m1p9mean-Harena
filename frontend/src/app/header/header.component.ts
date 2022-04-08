@@ -10,7 +10,7 @@ import { HeaderService } from '../services/header.service';
 })
 export class HeaderComponent implements OnInit {
   @Input() header!: Header;
-  constructor(private headerService: HeaderService) {}
+  constructor(private headerService: HeaderService) {}  
   ngOnInit() {
     
   } 
