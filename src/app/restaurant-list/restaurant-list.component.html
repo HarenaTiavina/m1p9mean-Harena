@@ -1,0 +1,39 @@
+<section class="food_section layout_padding-bottom">
+    <div class="container"> 
+      <div class="heading_container heading_center">
+        <h2>
+        Liste Restaurant
+        </h2>
+      </div>
+
+      <ul class="filters_menu">
+        <li class="active" data-filter="*">tout</li>
+        <li>Malagasy</li>
+        <li>Fast Food</li>
+        <li>Italien</li>
+        <li>tropical</li>
+      </ul>
+      <div class="filters-content">
+        <div class="row grid">  
+          <!-- <app-restaurant *ngFor="let restaurant of myRestaurant" [restaurant]="restaurant">  </app-restaurant> -->
+          <div class="col-sm-6 col-lg-4 all pizza" *ngFor="let restaurant of myRestaurant" >
+            <div class="box" >
+              <div>
+                <div class="img-box">
+                  <img src={{restaurant.imageUrl}} alt="">
+                </div>
+                <div class="detail-box">
+                  <h5 > {{restaurant.title}} </h5>
+                  <p > {{restaurant.description}} </p>
+                  <div class="options">
+                    <h6 > {{restaurant.moyennePrix}} </h6>
+                    <a href="/menu"> menu </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
