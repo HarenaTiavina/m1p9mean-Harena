@@ -10,6 +10,8 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
 import { FooterComponent } from './footer/footer.component';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
+import { ListMenuComponent } from './list-menu/list-menu.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { RestaurantComponent } from './restaurant/restaurant.component';
     AcceuilComponent,
     FooterComponent,
     RestaurantListComponent,
-    RestaurantComponent
+    RestaurantComponent,
+    ListMenuComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

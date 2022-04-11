@@ -1,9 +1,10 @@
-//server.js
-var express = require('express');
-var app = express();
-app.get('/', function(req, res) {
-    res.send('Hello World');
-})
-var server = app.listen(8080, function() {
-    console.log("Backend Application listening at http://localhost:8080")
-})
+require('dotenv').config();
+
+const http = require("http");
+const app = require("./src/app.js");
+const server = http.createServer(app);
+const port = process.env.PORT ?? 3000;
+
+server.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
