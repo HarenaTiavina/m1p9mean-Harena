@@ -12,7 +12,7 @@ import { ListMenuComponent } from './list-menu/list-menu.component';
 
 const routes: Routes = [
   {path: 'header' , component: HeaderComponent},
-  {path: 'acceuil' , component: AcceuilComponent},
+  {path: '' , component: AcceuilComponent},
   {path: 'about' , component: AboutComponent},
   {path: 'menu' , component: ListMenuComponent},
   {path: 'footer' , component: FooterComponent},
